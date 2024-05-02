@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .container{
+        border-radius: 40px;
+        background-color: beige;
+        padding: 20px;
+        float: center;
+        max-width: 400px;
+        margin-left: 300px;
+        
+    }
+    .form-group{
+        box-shadow: inset;
+        align-content: center;
+        max-width: 300px;
+    }
+    .form-group label,
+    .form-group input{
+        display:block;
+        font-size: large;
+        width: 100%;
+    }
+    input{
+        display: block;
+        width: 500px;
+    }
+    button{
+        margin-top: 10px;
+        background-color: green;
+        font-size: 14px;
+        padding: 0.2;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <form class="form-group" action="/success" method="post">
+            <div>
+                <label>First Name:</label>
+            </div>
+            <div>
+                <input class="fname" type="text" name="fname" placeholder="Enter first name">
+            </div>
+            <div>
+                <label>Last Name:</label></labe>
+            </div>
+            <div>
+                <input class="lname" type="text" name="lname" placeholder="Enter last name">
+            </div>
+            <div>
+                <label>Phone number:</label>
+            </div>
+            <div>
+                <input class="phonenumber" type="number" name="phonenumber" placeholder="Enter phone number">
+            </div>
+            <div>
+                <label>Email Id:</label>
+            </div>
+            <div>
+                <input class="email" type="email" name="email" placeholder="Enter email">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+</body>
+</html>

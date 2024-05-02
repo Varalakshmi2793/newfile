@@ -1,0 +1,31 @@
+<!-- create_table.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table</title>
+</head>
+<body>
+    <h1>Create Table</h1>
+    <form id="createTableForm">
+        <label for="tableName">Table Name:</label>
+        <input type="text" id="tableName" name="tableName" required>
+        <div id="tableFields">
+            <div class="field">
+                <label for="columnName">columnName:</label>
+                <input type="text" class="columnName" id="columnName" required>
+                <label for="columnName">columnType:</label>
+                <input type="text" class="columnType" id="columnType" required>
+            </div>
+        </div>
+        <button type="button" onclick="addTableField()">Add Table Field</button>
+        <div>
+        <button type="button" onclick="createTable()">Create Table</button>
+    </div>
+    </form>
+
+    <script src="create_table.js">    
+    </script>
+</body>
+</html>
